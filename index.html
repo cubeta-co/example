@@ -1,10 +1,58 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>{{.Project}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Congratulations !</title>
+    <meta name="description" content="Congratulations you have deployed your project succesfully !">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f3f3f3;
+        }
+    </style>
 </head>
-<body>
-{{.Region}}
+
+<body onload="party.screen()">
+    <div class="container mx-auto">
+        <div class="flex h-full justify-center items-center flex-col text-black text-center">
+            <div class="logo">
+                <center>
+                    <img class="mt-7 w-10/12 md:w-1/2"
+                        alt="cubeta.co_logo"
+                        src="https://cdn.discordapp.com/attachments/785077133277528074/833114321336270924/unknown.png" />
+                </center>
+            </div>
+            <p class="text-xl md:text-5xl font-bold mt-5 md:mt-10">
+                Yay &#127881;, you deployed examaple project.
+            </p>
+            <p class="text-sm md:text-xl text-gray-600 mt-0 md:mt-3 font-bold">
+                Explore more with Cubeta.
+            </p>
+            <p
+                class="bg-gray-600 rounded-none md:rounded-3xl text-gray-400 p-4 md:p-10 mt-5 md:mt-10 text-left text-sm md:text-lg">
+                This is version <code class="text-gray-200">VERSION</code> of <code class="text-gray-200">SERVICE</code>
+                that runs in Cubeta <code class="text-gray-200">REGION</code> region at <code
+                    class="text-gray-200">PROJECT</code> project.
+            </p>
+            <a href="http://www.cubeta.co"
+                style="background: rgb(37,111,255);background: linear-gradient(45deg, rgba(37,111,255,1) 29%, rgba(180,205,255,1) 100%, rgba(255,255,255,1) 100%);"
+                class="p-3 md:p-5 px-10 md:px-16 bg-gradient-to-r from-blue-400 to-gray-200 text-white shadow-2xl rounded-xl mt-5 shadow-md hover:">
+                Build and Deploy
+            </a>
+            <!-- <img src="./rocket.png" style="z-index: -999;" class="w-3/12 z-0 absolute left-40 bottom-0"> -->
+        </div>
+    </div>
+    <script src="./party.min.js"></script>
 </body>
+
 </html>
