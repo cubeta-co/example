@@ -11,6 +11,8 @@ import (
 type Data struct {
 	Project string
 	Region  string
+	Version string
+	Service string
 }
 
 func main() {
@@ -18,10 +20,14 @@ func main() {
 
 	project := os.Getenv("PROJECT")
 	region := os.Getenv("REGION")
+	version := os.Getenv("VERSION")
+	service := os.Getenv("SERVICE")
 
 	dat := Data{
 		Project: project,
 		Region:  region,
+		Service: service,
+		Version: version,
 	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
