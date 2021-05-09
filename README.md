@@ -13,7 +13,7 @@ This is Cubeta Platform example project deployment codes repo.
 
 ## Screenshot
 
-![Example screenshot](./img/example.png)
+![Example screenshot](https://github.com/cubeta-co/example/blob/master/img/example.PNG)
 
 ## Technologies
 
